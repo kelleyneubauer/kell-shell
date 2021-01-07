@@ -3,41 +3,34 @@
 #	Author:	Kelley Neubauer
 #	Date:	10/23/2020
 #
-#	Description:
-#	This is a makefile for CS344 Assignment 3
+#	Description: makefile for kell-shell
 #
 ################################################################################
 
-all : smallsh
+all : kell-shell
 
 #
 # Compiler
 #
-CXX = gcc
+CC = gcc
 
 #
 # Compiler Flags
 #
-# CXXFLAGS = -std=c99
-CXXFLAGS = -std=gnu99
-CXXFLAGS += -Wall 
-CXXFLAGS += -pedantic-errors
-CXXFLAGS += -g
+CFLAGS = -std=gnu99
+CFLAGS += -Wall 
+CFLAGS += -pedantic-errors
+CFLAGS += -g
 
 #
 # Project Name
 #
-PROJ = smallsh
+PROJ = kell-shell
 
 #
 # Source Files
 #
 SRC += main.c
-
-#
-# Header Files
-#
-# HEADER += 
 
 #
 # Object Files
@@ -48,13 +41,13 @@ OBJ += main.o
 # Create Executable File
 #
 ${PROJ}: ${OBJ} ${HEADER}
-	${CXX} ${LDFLAGS} ${OBJ} -o ${PROJ}
+	${CC} ${LFLAGS} ${OBJ} -o ${PROJ}
 
 #
 # Create Object Files
 #
 ${OBJ}: ${SRC}
-	${CXX} ${CXXFLAGS} -c $(@:.o=.c)
+	${CC} ${CFLAGS} -c $(@:.o=.c)
 
 #
 # Clean Up
