@@ -1,12 +1,27 @@
-# CS 344 Assignment 3
+# KELL-SHELL
 
-**Kelley Neubauer**\
-**neubauek@oregonstate.edu**\
-**ID #931413674**
+### Kelley Neubauer
+
+Minesweeper for your terminal with ncurses GUI interface!
+
+<img src="/img/minesweeper_gameplay.png" width="600">
+
+[Play on repli.it!](https://repl.it/@kelleyneubauer/minesweeper)
 
 ---
 
-### **Assignment 3: smallsh**
+**Running Kell-Shell from the command line:**
+
+1. Navigate to folder neubauek_program3 folder using `cd src`
+2. To compile, type `make` \
+    Program is compiled using GNU99 standard.\
+    Executable is named `kell-shell`.
+3. To run, type `./kell-shell` 
+4. To clean up and remove executable and object files, type `make clean`.`
+
+---
+
+**What it does:**
 
 This program will:
 1. Provide a prompt for running commands
@@ -19,12 +34,3 @@ functions
 7. Support running commands in foreground and background processes
 8. Implement custom handlers for 2 signals, SIGINT and SIGTSTP
 
----
-
-Running main.c from cmd line:
-1. Navigate to folder neubauek_program3 folder using `cd neubauek_program3`
-2. To compile, type `make` \
-    Program is compiled using GNU99 standard.\
-    Executable is named `smallsh`.
-3. To run, type `./smallsh` 
-4. To clean up and remove executable and object files, type `make clean`.
