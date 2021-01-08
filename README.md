@@ -25,7 +25,7 @@ kell-shell implements a subset of features found in well-known shells like bash.
 
 **Running kell-shell from the command line:**
 
-1. Navigate to folder neubauek_program3 folder using `cd src`
+1. Navigate to src folder folder using `cd src`
 2. To compile, type `make` \
     Program is compiled using GNU99 standard.\
     Executable is named `kell-shell`.
