@@ -4,10 +4,8 @@
 * Author:   Kelley Neubauer
 * Date:     10/23/2020
 * 
-* Description: CS344 Assignment 3
-* 
-*       This program implements a subset of features found in well-known shells,
-*       such as bash. It:
+* Description: kell-shell implements a subset of features found in well-known
+*   shells, such as bash. kell-shell:
 *       1. Provides a prompt for running commands
 *       2. Handles blank lines and comments, which are lines beginning with 
 *           the # character
@@ -18,52 +16,6 @@
 *       6. Supports input and output redirection
 *       7. Supports running commands in foreground and background processes
 *       8. Implements custom handlers for 2 signals, SIGINT and SIGTSTP 
-* 
-* -----------------------------------------------------------------------------
-*
-* Elements of this code have been adapted from:
-*
-* - Title: OSU CS344 course materials: studentsc example code
-*   Author: Unknown
-*   Date: Unknown
-*   Availability: canvas.oregonstate.edu
-*   Additional Info: first accessed 9/24/2020
-*
-* - Title: OSU CS344 course materials: example repls
-*       - 5_4_sortViaFiles.c
-*       - 5_3_siguser.c 
-*   Author: Unknown
-*   Date: Unknown
-*   Availability: canvas.oregonstate.edu
-*   Additional Info: first accessed 9/24/2020
-*
-* - Title: OSU CS344 lectures 
-*       - 3.1 Processes
-*       - 3.3 Signals
-*   Author: Benjamin Brewster
-*   Date: 4/10/2019
-*   Availability: https://www.youtube.com/channel/UCqiv0C67MA6NOiusl5NLXIQ
-*   Additional Info: first accessed 10/21/2020
-*
-* - Title: The Linux Programming Interface
-*   Author: Michael Kerrisk
-*   Date: 2010
-*   Availability: https://nostarch.com/tlpi
-*   Additional Info: first accessed 10/23/2020
-*  
-* - Title: C - how to convert a pointer in an array to an index?
-*   Author: AraK
-*   Date: 4/26/2010
-*   Availability: https://stackoverflow.com/questions/2711653
-*   Additional Info: First accessed 10/26/2020
-*
-* - Title: Linked List | Set 3 (Deleting a node)
-*   Author: Geeks for Geeks
-*   Date: 10/26/2020
-*   Availability: https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
-*   Additional Info: first accessed 11/2/2020
-*
-* - Kelley Neubauer CS344 Assignment1 & Assignment2
 * 
 ******************************************************************************/
 #include <stdio.h>
@@ -481,7 +433,7 @@ int main (int argc, char* argv[])
 
 
         // print prompt and get user input
-        printf(": ");
+        printf("k$: ");
         fflush(stdout);
         userInput = fgets(buffer, sizeof(buffer), stdin); // fgets reads \n
 
