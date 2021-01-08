@@ -10,7 +10,8 @@ kell-shell is my very own shell program written in C
 
 **What does kell-shell do?**
 
-kell-shell implements a subset of features found in well-known shells like bash. It:
+kell-shell implements a subset of features found in well-known shells like bash. 
+It:
 
 1. Has a prompt `k$: `
 2. Can handle comment lines that begin with `#`
