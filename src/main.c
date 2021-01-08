@@ -4,18 +4,18 @@
 * Author:   Kelley Neubauer
 * Date:     10/23/2020
 * 
-* Description: kell-shell implements a subset of features found in well-known
-*   shells, such as bash. kell-shell:
-*       1. Provides a prompt for running commands
-*       2. Handles blank lines and comments, which are lines beginning with 
-*           the # character
-*       3. Provides expansion for the variable $$ to PID
-*       4. Executes 3 commands exit, cd, and status by code built into the shell
-*       5. Executes other commands by creating new processes using a function 
-*           from the exec family of functions
-*       6. Supports input and output redirection
-*       7. Supports running commands in foreground and background processes
-*       8. Implements custom handlers for 2 signals, SIGINT and SIGTSTP 
+* Description: 
+*
+*   kell-shell implements a subset of features found in well-known shells,
+*   such as bash. It:
+*       1. Has a prompt `k$: `
+*       2. Can handle comment lines that begin with `#`
+*       3. Expands the variable `$$` to PID
+*       4. Contains 3 built-in commands: `exit`, `cd`, and `status`
+*       5. Can execute non-built-in commands as new processes
+*       6. Works with input `<` and output `>` redirection
+*       7. Supports running background processes with a last argument `&`
+*       8. Uses custom signal handlers for `SIGINT` and `SIGTSTP`
 * 
 ******************************************************************************/
 #include <stdio.h>
