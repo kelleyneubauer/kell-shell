@@ -30,7 +30,7 @@ kell-shell implements a subset of features found in well-known shells like bash.
     Program is compiled using GNU99 standard.\
     Executable is named `kell-shell`.
 3. To run, type `./kell-shell` 
-4. To clean up and remove executable and object files, type `make clean`.`
+4. To clean up and remove executable and object files, type `make clean`
 
 ---
 
