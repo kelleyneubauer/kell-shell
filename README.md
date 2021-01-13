@@ -4,7 +4,7 @@
 
 kell-shell is my very own shell program written in C!
 
-<img src="/img/kell-shell.gif" width="300">
+<img src="/img/kell-shell.gif" width="400">
 
 [Try it on repli.it!](https://repl.it/@kelleyneubauer/kell-shell)
 
