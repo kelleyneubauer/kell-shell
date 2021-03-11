@@ -2,7 +2,7 @@
 
 ### Kelley Neubauer
 
-kell-shell is my very own shell program written in C!
+kell-shell is my very own shell program written in C
 
 <img src="/img/kell-shell.gif" width="400">
 
